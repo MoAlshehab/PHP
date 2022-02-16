@@ -14,7 +14,9 @@
     }
 
     $getresult =  oppervlakteBerekenen($_POST["l1"],$_POST["b1"]);{
-    echo ' L ' .$_POST["l1"]  ." x ". ' B '.$_POST["b1"] ."=".$getresult; 
+    echo  "De oppervlakte = ".' L ' .$_POST["l1"]  ." x ". ' B '.$_POST["b1"] ."=".$getresult  ." m²"; 
+   
+
     }
 }
     /* 
