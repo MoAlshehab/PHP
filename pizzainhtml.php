@@ -10,13 +10,10 @@
 </head>
 <body>
 
-
-
-
 <?php include 'pizzain.php'; ?>
-
-
-
+<div>
+<h2>Pizza's Inhoud </h2>
+</div>
 
 <div class="b"> <h5> Margherita pizza </h5>
 Tomatensaus, mozzarella en met knoflookolie 
@@ -36,70 +33,70 @@ Let op: de beschikbaarheid van producten kan per winkel verschillen.
 
 
 
+<div>
 
-
-
+<h2>Menu</h2> </div>
 
 
 <div class="c">
+
 <hr>
 <h1> 👇Hier onder mag je je pizza kiezen👇 </h1>
 
 
 
   Welke pizza kies je ? 
- <form method="post" >
-<select name="soort">
-        <option value="niks">Maak uw Keuze</option>
-        <option value="Marghrita"<?php if($soort=='Margherita'){ echo "selected";} ?>> Margherita  | €12,50 </option>
-        <option value="Funghi"<?php if($soort=='Funghi'){ echo "selected";} ?>>Funghi  | €12,50 </option>
-        <option value="Marina"<?php if($soort=='Marina'){ echo "selected";} ?> >Marina |  €13,95 </option>
-        <option value="hawai"<?php if($soort=='hawai'){ echo "selected";} ?>>Hawai | €11,50 </option>
-        <option value="Quattro Formaggi"<?php if($soort=='Quattro Formaggi'){ echo "selected";} ?> > Quattro Formaggi |€14,50 </option>
-</select> 
+  <br><br> <br> 
+    <form method="post" action="">
+    <label for="pizzamargherita">Pizza Margherita  12,50</label>
+    <input type="number"  name="pizzamargherita" value="0" min="0"><br><br>
+    <label for="pizzafunghi ">Pizza Funghi   12,50</label>
+    <input type="number"  name="pizzafunghi" value="0" min="0"><br><br>
+    <label for="pizzamarina">Pizza Marina  13,95</label>
+    <input type="number"  name="pizzamarina" value="0" mi n="0"><br><br>
+    <label for="pizzahawai">Pizza  Hawai  11,50</label>
+    <input type="number" name="pizzahawai" value="0" min="0"><br><br>
+    <label for="pizzaquattroformaggi">Pizza Quattro Formaggi  14,50</label>
+    <input type="number" name="pizzaquattroformaggi" value="0" min="0"><br>
 
-
-<form method="GET">
-        Aantal <select name="aantal">
-        <option  value="0"<?php if($aantal=='0'){ echo "selected";} ?>> 0</option>
-        <option  value="1"<?php if($aantal=='1'){ echo "selected";} ?>> 1</option>  
-         <option   value="2"<?php if($aantal=='2'){ echo "selected";} ?>> 2</option>
-         <option   value="3"<?php if($aantal=='3'){ echo "selected";} ?>> 3</option>
-        <option   value="4"<?php if($aantal=='4'){ echo "selected";} ?>> 4</option>
-        <option  value="5"<?php if($aantal=='5'){ echo "selected";} ?>> 5</option>
-        <br>
-        <input type="submit" name="submit" value="Bestellen"/> 
- </select> <br> 
-
-<h5>Bezorzen kosten zijn  € 5 per bestelling </h5>  <br>
-
-      <input type="radio" name="m" id="t"/> <label for="t"> Bezorgen</label> 
-      <input type="radio" name="m" id="t1"/> <label for="t1"> Afhalen</label>  
 
 </div>
- </form> 
 
+<div>
+ <h2> Gegevens</h2>
+ </div>
  <div class="a">
     
-    <form method="GET">
+   
     
          Naam:<br>
-        <input type="text" name="data"  placeholder="Uw naam" required/><br><br> <br> 
+        <input type="text" name="naam"  placeholder="Uw naam" required/><br><br> <br> 
 
-        Achternaam:<br>
-        <input type="text" name="dat1"  placeholder="Uw achternaam" required/><br><br> <br> 
 
+        <label for="lname">Adres:</label><br>
+        <input type="text"  name="adres" value="" required ><br>
+        
         Postcode:<br>
-        <input type="text" name="dat2"  placeholder="Uw postcode" required/><br><br> <br> 
+        <input type="text" name="postcode"  placeholder="Uw postcode" required/><br><br> <br> 
 
         Woonplaats:<br>
-        <input type="text" name="dat3"  placeholder="Uw plaats" required/><br><br> <br> 
+        <input type="text" name="plaats"  placeholder="Uw plaats" required/><br><br> <br> 
 
          E-mail:<br>
-        <input type="text" name="dat4"/><br><br> <br> 
+        <input type="text" name="email" required /><br><br> <br> 
 
-            <input type="checkbox" id="mo"/> <label >Wil je een E-mail ontvagen </label><br>
-     
-            <input type="submit" name="submit" value="Akkoord"/> 
+        <label for="fname">Besteldatum:</label><br>
+  <input type="date"  name="besteldatum"min="<?=date('Y-m-d'); ?>" value="" required ><br><br><br>
+
+   <input type="checkbox" id="mo"/> <label >Wil je een E-mail ontvagen </label><br>
+
+            <input type="radio" name="bezorgkeuze" value="bezorgen">
+            <label for="bezorgkeuze">Bezorgen</label>
+            <input type="radio" name="bezorgkeuze" value="afhalen">
+            <label for="bezorgkeuze">Afhalen</label><br>  
+            <h5>Bezorzen kosten zijn  € 5 per bestelling </h5>  <br>
+            <input class="button" type="submit" value="Bestellen">
       </div>
     </form>
+</body>
+</html>
