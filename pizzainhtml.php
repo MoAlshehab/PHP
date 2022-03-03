@@ -1,4 +1,5 @@
 
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,11 +10,7 @@
     <link rel="stylesheet" type="text/css" href="pizza.css">
 </head>
 <body>
-
-<?php include 'pizzain.php'; ?>
-<div>
 <h2>Pizza's Inhoud </h2>
-</div>
 
 <div class="b"> <h5> Margherita pizza </h5>
 Tomatensaus, mozzarella en met knoflookolie 
@@ -33,56 +30,51 @@ Let op: de beschikbaarheid van producten kan per winkel verschillen.
 
 
 
-<div>
 
-<h2>Menu</h2> </div>
+
+<h2>Menu</h2>
 
 
 <div class="c">
 
-<hr>
 <h1> 👇Hier onder mag je je pizza kiezen👇 </h1>
 
-
-
-  Welke pizza kies je ? 
+            <h3>Welke pizza kies je ? </h3>
   <br><br> <br> 
-    <form method="post" action="">
-    <label for="pizzamargherita">Pizza Margherita  12,50</label>
+    <form method="post" action="pizzain.php">
+    <label for="pizzamargherita">Pizza Margherita  12,50</label><br>
     <input type="number"  name="pizzamargherita" value="0" min="0"><br><br>
-    <label for="pizzafunghi ">Pizza Funghi   12,50</label>
+    <label for="pizzafunghi ">Pizza Funghi   12,50</label><br>
     <input type="number"  name="pizzafunghi" value="0" min="0"><br><br>
-    <label for="pizzamarina">Pizza Marina  13,95</label>
+    <label for="pizzamarina">Pizza Marina  13,95</label><br>
     <input type="number"  name="pizzamarina" value="0" mi n="0"><br><br>
-    <label for="pizzahawai">Pizza  Hawai  11,50</label>
+    <label for="pizzahawai">Pizza  Hawai  11,50</label><br>
     <input type="number" name="pizzahawai" value="0" min="0"><br><br>
-    <label for="pizzaquattroformaggi">Pizza Quattro Formaggi  14,50</label>
+    <label for="pizzaquattroformaggi">Pizza Quattro Formaggi  14,50</label><br>
     <input type="number" name="pizzaquattroformaggi" value="0" min="0"><br>
 
 
 </div>
 
-<div>
  <h2> Gegevens</h2>
- </div>
+
  <div class="a">
     
    
     
-         Naam:<br>
+ <label for="lname">Naam:</label><br>
         <input type="text" name="naam"  placeholder="Uw naam" required/><br><br> <br> 
 
 
         <label for="lname">Adres:</label><br>
-        <input type="text"  name="adres" value="" required ><br>
+        <input type="text"  name="adres" value="" required ><br><br> <br> 
         
-        Postcode:<br>
-        <input type="text" name="postcode"  placeholder="Uw postcode" required/><br><br> <br> 
+        <label for="poscode">Postcode:</label><br>
+        <input type="text" name="postcode" required/><br><br> <br> 
 
-        Woonplaats:<br>
-        <input type="text" name="plaats"  placeholder="Uw plaats" required/><br><br> <br> 
-
-         E-mail:<br>
+        <label class="l" for="lname">Woonplaats:</label><br>
+        <input type="text" name="plaats" required/><br><br> <br> 
+        <label for="lname">E-mail:</label><br>
         <input type="text" name="email" required /><br><br> <br> 
 
         <label for="fname">Besteldatum:</label><br>
@@ -95,7 +87,7 @@ Let op: de beschikbaarheid van producten kan per winkel verschillen.
             <input type="radio" name="bezorgkeuze" value="afhalen">
             <label for="bezorgkeuze">Afhalen</label><br>  
             <h5>Bezorzen kosten zijn  € 5 per bestelling </h5>  <br>
-            <input class="button" type="submit" value="Bestellen">
+            <input class="button" type="submit"  name="bestellen" value="Bestellen">
       </div>
     </form>
 </body>

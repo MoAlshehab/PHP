@@ -1,27 +1,45 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizza formulier</title>
+    <link rel="stylesheet" type="text/css" href="pizza.css">
+</head>
+<body>
+<div class="r">
+
 <?php
-$pizzamargherita = $_POST['pizzamargherita'];
-$pizzafunghi = $_POST['pizzafunghi'];
-$pizzamarina = $_POST['pizzamarina'];
-$pizzahawai = $_POST['pizzahawai'];
-$pizzaquattroformaggi = $_POST['pizzaquattroformaggi'];
-$naam = $_POST['naam'];
-$adres = $_POST['adres'];
-$postcode = $_POST['postcode'];
-$plaats = $_POST['plaats'];
-$email = $_POST['email'];
-$besteldatum = $_POST['besteldatum'];
-  
-$margheritaprijs = 12.50;
-$funghiprijs=12.50;
-$marinaprijs=13.95;
-$hawaiprijs=11.50;
-$quattroformaggiprijs=14.50;
 
 if(isset($_POST["bestellen"])){
+
+    $pizzamargherita = $_POST['pizzamargherita'];
+    $pizzafunghi = $_POST['pizzafunghi'];
+    $pizzamarina = $_POST['pizzamarina'];
+    $pizzahawai = $_POST['pizzahawai'];
+    $pizzaquattroformaggi = $_POST['pizzaquattroformaggi'];
+    $naam = $_POST['naam'];
+    $adres = $_POST['adres'];
+    $postcode = $_POST['postcode'];
+    $plaats = $_POST['plaats'];
+    $email = $_POST['email'];
+    $besteldatum = $_POST['besteldatum'];
+    
+    $margheritaprijs = 12.50;
+    $funghiprijs=12.50;
+    $marinaprijs=13.95;
+    $hawaiprijs=11.50;
+    $quattroformaggiprijs=14.50;
+
+}
+
+if(isset($_POST["bestellen"])){
+
 $datum = new DateTime("now");
 echo $datum->format('Y-m-D H:i:s');
-
+echo "<br />";
 }
 $totaalbedrag = 0;
 $bezorgkosten = 0;
@@ -87,7 +105,6 @@ $quattroformaggiprijs = 7.5;
         echo "<br />Totaal: €". $totaalbedrag;
         $totaalbedrag = $totaalbedrag - $kortingbedrag;
     }
-    
  echo " Het totaalbedrag met korting is: €" . $totaalbedrag; ?>
     <br><br>
     <?php echo $naam; ?>
@@ -103,7 +120,9 @@ $quattroformaggiprijs = 7.5;
     <?php echo $besteldatum; ?>
     <br>
 
-    
+    <a  class="t" href="pizzainhtml.php">Terug naar bestellen 😊</a>
     <?php
     ?>
-
+ </div>
+</body>
+</html>

@@ -10,8 +10,6 @@
         width: 300px;
         float: left;
     }
-    label{
-    }
     .button {
         display: inline-block;
         padding: 7px 14px;
@@ -82,17 +80,7 @@ if(isset($_POST["submit"])){
             echo "</table>";
             $i++;
         }
-        // for ($i = 1; $bedrag <= $controleBedrag * 2; $i++)
-        // {
-        //     $bedrag += $bedrag * $rente;
-        //     echo "<table border=1>";
-        //     echo "
-        //         <tr>
-        //             <th>Jaar " .$i." </th>
-        //             <th>".$bedrag."</th>
-        //         </tr>";
-        //     echo "</table>";
-        // }
+    
     }
 }
 ?>
