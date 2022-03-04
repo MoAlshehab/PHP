@@ -12,21 +12,22 @@
 <body>
 <h2>Pizza's Inhoud </h2>
 
-<div class="b"> <h5> Margherita pizza </h5>
-Tomatensaus, mozzarella en met knoflookolie 
-op de rand van de pizza. Tip! Ook lekker met oregano.
- <h5>Funghi pizza </h5>
- Tomatensaus, mozzarella, champignons & pizzakruiden
-Let op: de beschikbaarheid van producten kan per winkel verschillen.
- <h5>Marina pizza </h5>
- Het beste van twee werelden op één pizza. Bestel de Double 
- tasty en stel je eigen pizza samen. Eén pizza, twee smaken.
- <h5>Hawai pizza </h5>
- Tomatensaus, mozzarella, ham (kalkoen),
-  ananas en extra mozzarella en knoflookolie op de rand.
- <h5> Quattro Formaggi pizza </h5>
- Tomatensaus, mozzarella, champignons, parmezaan flakes,
-  truffeltapenade, peterselie en knoflookolie op de rand.</div>
+      <div class="b"> 
+      <h5> Margherita pizza </h5>
+      Tomatensaus, mozzarella en met knoflookolie 
+      op de rand van de pizza. Tip! Ook lekker met oregano.
+      <h5>Funghi pizza </h5>
+      Tomatensaus, mozzarella, champignons & pizzakruiden
+      Let op: de beschikbaarheid van producten kan per winkel verschillen.
+      <h5>Marina pizza </h5>
+      Het beste van twee werelden op één pizza. Bestel de Double 
+      tasty en stel je eigen pizza samen. Eén pizza, twee smaken.
+      <h5>Hawai pizza </h5>
+      Tomatensaus, mozzarella, ham (kalkoen),
+        ananas en extra mozzarella en knoflookolie op de rand.
+      <h5> Quattro Formaggi pizza </h5>
+      Tomatensaus, mozzarella, champignons, parmezaan flakes,
+        truffeltapenade, peterselie en knoflookolie op de rand.</div>
 
 
 
@@ -66,19 +67,19 @@ Let op: de beschikbaarheid van producten kan per winkel verschillen.
         <input type="text" name="naam"  placeholder="Uw naam" required/><br><br> <br> 
 
 
-        <label for="lname">Adres:</label><br>
+        <label for="adres">Adres:</label><br>
         <input type="text"  name="adres" value="" required ><br><br> <br> 
         
         <label for="poscode">Postcode:</label><br>
         <input type="text" name="postcode" required/><br><br> <br> 
 
-        <label class="l" for="lname">Woonplaats:</label><br>
+        <label class="l" for="plaats">Woonplaats:</label><br>
         <input type="text" name="plaats" required/><br><br> <br> 
-        <label for="lname">E-mail:</label><br>
+        <label for="email">E-mail:</label><br>
         <input type="text" name="email" required /><br><br> <br> 
 
         <label for="fname">Besteldatum:</label><br>
-  <input type="date"  name="besteldatum"min="<?=date('Y-m-d'); ?>" value="" required ><br><br><br>
+  <input type="date"  name="besteldatum" min="<?=date('Y-m-d'); ?>" value="" required ><br><br><br>
 
    <input type="checkbox" id="mo"/> <label >Wil je een E-mail ontvagen </label><br>
 

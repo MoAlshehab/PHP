@@ -6,9 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        body{
+            background-color: #666;
+        }
+        div.B{
+       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        color:red;
+        padding-top:250px;
+        padding-left: 50px;
+        }
     .main{
+        color:rosybrown;
         width: 300px;
         float: left;
+        padding: 10px;
     }
     .button {
         display: inline-block;
@@ -24,7 +35,8 @@
         border-radius: 7px;
         box-shadow: 0 5px #999;
     }
-    .button:hover {background-color: black}
+    .button:hover 
+          {background-color: black}
     .button:active {
         background-color: #3e8e41;
         box-shadow: 0 5px #666;
@@ -45,6 +57,7 @@
     <input class="button" type="submit" name="submit" value="Bereken">
     </div>
     </form>
+    <div class="B">
     <?php 
 if(isset($_POST["submit"])){
     $bedrag = $_POST['bedrag'];
@@ -84,5 +97,6 @@ if(isset($_POST["submit"])){
     }
 }
 ?>
+    </div>
 </body>
 </html>
