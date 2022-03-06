@@ -1,5 +1,33 @@
 <?php
 
+function func() {
+    echo "+het is mo test\n";
+    }
+   
+    echo "- Deze code is voor de for-lus uitgevoerd.\n";
+   
+    for ($counter=1;$counter<=11;$counter++) {
+    echo "= Deze code is in de for-lus\n";
+    echo " maar voor func() uitgevoerd.\n";
+    func();
+    echo "= Deze code is in de for-lus\n";
+    echo " maar na func() uitgevoerd.\n";
+    }
+   
+   
+    echo "- Deze code is na de for-lus uitgevoerd.\n";
+   
+
+
+    function berekenBtw($bedragExBtw){
+
+        return $bedragExBtw * 0.21;
+        
+        }
+         
+        
+           echo berekenBtw(100);
+        
 
 
 
@@ -40,15 +68,5 @@ echo $kijk;*/
 
 // dat is de opdracht zelf ....
 
-
-
-function berekenBtw($bedragExBtw){
-
-return $bedragExBtw * 0.21;
-
-}
- 
-
-   echo berekenBtw(100);
 
 ?>

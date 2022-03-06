@@ -22,7 +22,7 @@
             text-align: center;
             color:red;
             font-size: 20px;
-            border-style: dotted;
+            border-style: inset;
             background-color: white;
         }
         div.vlag{
@@ -49,7 +49,7 @@
         <option value="EN"<?php if($land=='EN'){ echo "selected";} ?>>Engeland</option>
         <option value="FR"<?php if($land=='FR'){ echo "selected";} ?>>Frankrijk</option>
         <option value="SP"<?php if($land=='SP'){ echo "selected";} ?>>Spanje</option>
-        <option value="IT"<?php if($land=='IT'){ echo "selected";} ?>>Italy</option>
+        <option value="IT"<?php if($land=='IT'){ echo "selected";} ?>>Italië</option>
         <option value="CH" <?php if($land=='CH'){ echo "selected";} ?>>China</option>
     </select>
 <br/> <br/><br/>

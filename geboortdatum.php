@@ -1,8 +1,23 @@
-<html>
-    <head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<head>
     <title>Leeftijd</title>
-    </head>
+  
+    <style>
+body{
+	background-color:gray;
+	color:wheat;
+	padding-left: 50px;
+	font-size: large;
+}
 
+
+		</style>
+	</head>
 <body>
 <h1>Voer uw geboortedatum in:</h1>
 
@@ -190,14 +205,14 @@ if(isset($_POST['submit'])){
     $m = $_POST['month'];
     $y = $_POST['year'];
 
-$dod = $d. '-' .$m. '-' .$y;
+$jou= $d. '-' .$m. '-' .$y;
 
-$bday = new DateTime($dod);
+$bday = new DateTime($jou);
 $today = date('d-m-Y');
 $age =$bday -> diff(new DateTime());
 echo "<br/>";
 echo "Jouw geboortedatum is: ";
-echo $dod;
+echo $jou;
 echo "<br/>";echo "<br/>";
 echo "Jouw leeftijd is : ";
 echo $age->y;
