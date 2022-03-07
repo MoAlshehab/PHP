@@ -10,7 +10,7 @@
     <link rel="stylesheet" type="text/css" href="pizza.css">
 </head>
 <body>
-<h2>Pizza's Inhoud </h2>
+<h2 class="title">Pizza's Inhoud </h2>
 
       <div class="b"> 
       <h5> Margherita pizza </h5>
@@ -33,7 +33,7 @@
 
 
 
-<h2>Menu</h2>
+        <h2 class="title"> Menu</h2>
 
 
 <div class="c">
@@ -57,7 +57,7 @@
 
 </div>
 
- <h2> Gegevens</h2>
+ <h2 class="title"> Gegevens</h2>
 
  <div class="a">
     

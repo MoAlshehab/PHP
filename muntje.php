@@ -21,7 +21,7 @@
     
 body{
     padding-left: 200px;
-    color:green;
+    color:red;
     font-size: 50px;
     background-image: url(geld.jfif);
 }

@@ -10,6 +10,7 @@ function func() {
     echo "= Deze code is in de for-lus\n";
     echo " maar voor func() uitgevoerd.\n";
     func();
+    echo "<br/><br/>";
     echo "= Deze code is in de for-lus\n";
     echo " maar na func() uitgevoerd.\n";
     }
@@ -17,7 +18,7 @@ function func() {
    
     echo "- Deze code is na de for-lus uitgevoerd.\n";
    
-
+    echo "<br/><br/>";
 
     function berekenBtw($bedragExBtw){
 

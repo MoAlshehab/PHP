@@ -17,6 +17,8 @@
     <style>
         body{
              background-color:maroon;
+             border: double;
+
                 }
         div.naam{
             text-align: center;
@@ -42,6 +44,7 @@
         <label for="naam">Naam:</label>
         <input type="text" name="naam" value="<?php echo $naam; ?>" placeholder="Uw naam" required/><br/><br/><br/>
         <label for="naam">Land:</label>
+        
     <select name="land">
         <option value="KEU"<?php if($land=='KEU'){ echo "selected";} ?>>Maak uw Keuze</option>
         <option value="NL"<?php if($land=='NL'){ echo "selected";} ?>>Nederland</option>
