@@ -50,11 +50,11 @@ if($bezorgkeuze=="bezorgen"){
 $timestamp = strtotime($besteldatum);
     $day = date('l', $timestamp);
 if($day == "Monday"){
-$margheritaprijs = 7.5;
-$funghiprijs = 7.5;
-$marinaprijs = 7.5;
-$hawaiprijs = 7.5;
-$quattroformaggiprijs = 7.5;
+    $margheritaprijs = 7.5;
+    $funghiprijs = 7.5;
+    $marinaprijs = 7.5;
+    $hawaiprijs = 7.5;
+    $quattroformaggiprijs = 7.5;
 }
 
 
@@ -102,7 +102,7 @@ $quattroformaggiprijs = 7.5;
         $kortingbedrag = $totaalbedrag * (0.15);
         echo "<br />Korting op vrijdag boven €20 is €". $kortingbedrag;
         echo "<br />";
-        echo "<br />Totaal: €". $totaalbedrag;
+       echo "<br />Totaal: €". $totaalbedrag;
         $totaalbedrag = $totaalbedrag - $kortingbedrag;
     }
  echo " Het totaalbedrag met korting is: €" . $totaalbedrag; ?>

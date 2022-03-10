@@ -67,49 +67,49 @@
             case 'NL':
             echo 'Goedemorgen '.$naam;
             echo "<br/><br/>";
-            echo '<img src="NL.png"  width="200" height="150">';
+            echo '<img src="foto/NL.png"  width="200" height="150">';
         
         break;
 
         case'DE':
             echo 'Guten morgen '.$naam;
             echo "<br/><br/>";
-            echo '<img src="du.png"  width="200" height="150">';
+            echo '<img src="foto/du.png"  width="200" height="150">';
     break;
     
         case 'EN':
             echo 'GOOD MORNINING '.$naam;
             echo "<br/><br/>";
-            echo '<img src="en.jpg"  width="200" height="150">';
+            echo '<img src="foto/en.jpg"  width="200" height="150">';
     break;
       case 'FR':
             echo 'Bonjour '.$naam;
             echo "<br/><br/>";
-            echo '<img src="fr.png" width="200" height="150">';
+            echo '<img src="foto/fr.png" width="200" height="150">';
     break;
 
       case 'SP':
         echo 'Buenos días '.$naam;
         echo "<br/><br/>";
-        echo '<img src="sp.png" width="200" height="150">';
+        echo '<img src="foto/sp.png" width="200" height="150">';
     break;
 
       case 'IT':
         echo 'Buon giorno '.$naam;
         echo "<br/><br/>";
-        echo '<img src="it.png"  width="200" height="150">';
+        echo '<img src="foto/it.png"  width="200" height="150">';
     break;
 
       case'CH':
         echo '早上好 '.$naam;
         echo "<br/><br/>";
-        echo '<img src="ch.png" width="200" height="150">';
+        echo '<img src="foto/ch.png" width="200" height="150">';
    break;
 
         case 'KEU':
             echo "Sorry,U moet nog een land kiezen ";
             echo "<br/><br/>";
-            echo '<img src="so.jpg"  width="200" height="150">';
+            echo '<img src="foto/so.jpg"  width="200" height="150">';
     break;
 
     }
